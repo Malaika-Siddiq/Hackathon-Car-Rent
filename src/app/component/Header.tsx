@@ -2,7 +2,7 @@
 
 import React from 'react'
 import Image from 'next/image'
-import { FaHeart, FaBell, FaSearch, FaCog } from 'react-icons/fa'
+
 
 const Header = () => {
   return (
