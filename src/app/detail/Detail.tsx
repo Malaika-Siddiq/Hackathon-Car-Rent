@@ -220,7 +220,7 @@ const Detail = () => {
               {/* text */}
 
               <div className="w-[444px] h-[100px]">
-                <p className="text-[#596780] text-xl font-normal">NISMO has become the embodiment of Nissan's outstanding performance, inspired by the most unforgiving proving ground, the "race track".</p>
+                <p className="text-[#596780] text-xl font-normal">NISMO has become the embodiment of Nissans outstanding performance, inspired by the most unforgiving proving ground, the race track.</p>
               </div>
 
               {/* type div */}
