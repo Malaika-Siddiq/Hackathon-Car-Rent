@@ -4,8 +4,8 @@ import Link from 'next/link'
 
 const Payment = () => {
   return (
-    <div>
-      <main className='w-[1440px] h-[2100px] bg-[#F6F7F9] flex justify-between p-6'>
+    <div className=''>
+      <main className='w-[1440px] h-[2100px] bg-[#F6F7F9] flex justify-between  p-6'>
 
 
         {/* main div of payment */}
@@ -27,27 +27,27 @@ const Payment = () => {
               <div className="flex">
 
                 <div className="grid w-full max-w-sm items-center gap-2">
-                  <label htmlFor="email" className='font-semibold text-base' >Name</label>
-                  <input type="email" id="email" placeholder="Your name" className=' w-[340px] h-[50px] bg-[#F6F7F9] font-md text-sm py-3 pl-6 rounded-md ' />
+                  <label htmlFor="text" className='font-semibold text-base' >Name</label>
+                  <input type="text" id="name" placeholder="Your name" className=' w-[340px] h-[50px]  outline-none bg-[#F6F7F9] font-md text-sm py-3 pl-6 rounded-md ' />
                 </div>
 
                 <div className="grid w-full max-w-sm items-center gap-2">
-                  <label htmlFor="email" className='font-semibold text-base' >Phone Number</label>
-                  <input type="email" id="email" placeholder="phone number" className=' w-[340px] h-[50px] bg-[#F6F7F9] font-md text-sm py-3 pl-6 rounded-md ' />
+                  <label htmlFor="number" className='font-semibold text-base' >Phone Number</label>
+                  <input type="number" id=" phone number" placeholder="phone number" className=' w-[340px] h-[50px]  outline-none bg-[#F6F7F9] font-md text-sm py-3 pl-6 rounded-md ' />
                 </div>
               </div>
 
               <div className="flex">
 
                 <div className="grid w-full max-w-sm items-center gap-2">
-                  <label htmlFor="email" className='font-semibold text-base' >Address</label>
-                  <input type="email" id="email" placeholder="Address" className='w-[340px] h-[50px] bg-[#F6F7F9] font-md text-sm py-3 pl-6 rounded-md ' />
+                  <label htmlFor="text" className='font-semibold text-base' >Address</label>
+                  <input type="text" id="address" placeholder="Address" className='w-[340px] h-[50px]  outline-none bg-[#F6F7F9] font-md text-sm py-3 pl-6 rounded-md ' />
 
                 </div>
 
                 <div className="grid w-full max-w-sm items-center gap-2">
-                  <label htmlFor="email" className='font-semibold text-base' >Town/City</label>
-                  <input type="email" id="email" placeholder="Town or city" className=' w-[340px] h-[50px] bg-[#F6F7F9] font-md text-sm py-3 pl-6 rounded-md ' />
+                  <label htmlFor="text" className='font-semibold text-base' >Town/City</label>
+                  <input type="text" id="city" placeholder="Town or city" className=' w-[340px] h-[50px]  outline-none bg-[#F6F7F9] font-md text-sm py-3 pl-6 rounded-md ' />
                 </div>
               </div>
             </div>
@@ -83,8 +83,8 @@ const Payment = () => {
               <div className="flex">
 
                 <div className="grid w-full max-w-sm items-center gap-2">
-                  <label htmlFor="email" className='font-semibold text-base' >Locations</label>
-                  <select id="options" name="options" className='w-[350px] h-[50px] bg-[#F6F7F9] font-md text-sm py-3 pl-6 rounded-md text-[#90A3BF]'>
+                  <label htmlFor="location" className='font-semibold text-base' >Locations</label>
+                  <select id="options" name="options" className='w-[350px] h-[50px]  outline-none bg-[#F6F7F9] font-md text-sm py-3 pl-6 rounded-md text-[#90A3BF]'>
                     <option value="option1">Select your city</option>
                     <option value="option2">Option 2</option>
                     <option value="option3">Option 3</option>
@@ -94,8 +94,8 @@ const Payment = () => {
                 </div>
 
                 <div className="grid w-full max-w-sm items-center gap-2">
-                  <label htmlFor="email" className='font-semibold text-base' >Date</label>
-                  <select id="options" name="options" className='w-[350px] h-[50px] bg-[#F6F7F9] font-md text-sm py-3 pl-6 rounded-md text-[#90A3BF]'>
+                  <label htmlFor="date" className='font-semibold text-base' >Date</label>
+                  <select id="options" name="options" className='w-[350px] h-[50px]  outline-none bg-[#F6F7F9] font-md text-sm py-3 pl-6 rounded-md text-[#90A3BF]'>
                     <option value="option1">Select your date</option>
                     <option value="option2">Option 2</option>
                     <option value="option3">Option 3</option>
@@ -106,9 +106,9 @@ const Payment = () => {
               </div>
 
               <div className="grid w-full max-w-sm items-center gap-2">
-                <label htmlFor="email" className='font-semibold text-base' >Time</label>
+                <label htmlFor="number" className='font-semibold text-base' >Time</label>
 
-                <select id="options" name="options" className='w-[350px] h-[50px] bg-[#F6F7F9] font-md text-sm py-3 pl-6 rounded-md text-[#90A3BF]'>
+                <select id="options" name="options" className='w-[350px] h-[50px]  outline-none bg-[#F6F7F9] font-md text-sm py-3 pl-6 rounded-md text-[#90A3BF]'>
                   <option value="option1">Select your time</option>
                   <option value="option2">Option 2</option>
                   <option value="option3">Option 3</option>
@@ -136,8 +136,8 @@ const Payment = () => {
               <div className="flex">
 
                 <div className="grid w-full max-w-sm items-center gap-2">
-                  <label htmlFor="email" className='font-semibold text-base' >Locations</label>
-                  <select id="options" name="options" className='w-[350px] h-[50px] bg-[#F6F7F9] font-md text-sm py-3 pl-6 rounded-md text-[#90A3BF]'>
+                  <label htmlFor="location" className='font-semibold text-base' >Locations</label>
+                  <select id="options" name="options" className='w-[350px] h-[50px]  outline-none  bg-[#F6F7F9] font-md text-sm py-3 pl-6 rounded-md text-[#90A3BF]'>
                     <option value="option1">Select your city</option>
                     <option value="option2">Option 2</option>
                     <option value="option3">Option 3</option>
@@ -147,8 +147,8 @@ const Payment = () => {
                 </div>
 
                 <div className="grid w-full max-w-sm items-center gap-2">
-                  <label htmlFor="email" className='font-semibold text-base' >Date</label>
-                  <select id="options" name="options" className='w-[350px] h-[50px] bg-[#F6F7F9] font-md text-sm py-3 pl-6 rounded-md text-[#90A3BF]'>
+                  <label htmlFor="date" className='font-semibold text-base' >Date</label>
+                  <select id="options" name="options" className='w-[350px] h-[50px]  outline-none bg-[#F6F7F9] font-md text-sm py-3 pl-6 rounded-md text-[#90A3BF]'>
                     <option value="option1">Select your date</option>
                     <option value="option2">Option 2</option>
                     <option value="option3">Option 3</option>
@@ -159,9 +159,9 @@ const Payment = () => {
               </div>
 
               <div className="grid w-full max-w-sm items-center gap-2">
-                <label htmlFor="email" className='font-semibold text-base' >Time</label>
+                <label htmlFor="number" className='font-semibold text-base' >Time</label>
 
-                <select id="options" name="options" className='w-[350px] h-[50px] bg-[#F6F7F9] font-md text-sm py-3 pl-6 rounded-md text-[#90A3BF]'>
+                <select id="options" name="options" className='w-[350px] h-[50px]  outline-none bg-[#F6F7F9] font-md text-sm py-3 pl-6 rounded-md text-[#90A3BF]'>
                   <option value="option1">Select your time</option>
                   <option value="option2">Option 2</option>
                   <option value="option3">Option 3</option>
@@ -217,12 +217,12 @@ const Payment = () => {
 
                   <div className="grid w-full max-w-sm items-center gap-2">
                     <label htmlFor="number" className='font-semibold text-base' >Card Number</label>
-                    <input type="number" id="number" placeholder="Card number" className=' w-[340px] h-[50px] bg-[#ffffff] font-md text-sm py-3 pl-6 rounded-md ' />
+                    <input type="number" id="number" placeholder="Card number" className=' w-[340px] h-[50px] outline-none bg-[#ffffff] font-md text-sm py-3 pl-6 rounded-md ' />
                   </div>
 
                   <div className="grid w-full max-w-sm items-center gap-2">
                     <label htmlFor="date" className='font-semibold text-base' >Expration Date</label>
-                    <input type="text" id="text" placeholder="DD/MM/YY" className=' w-[340px] h-[50px] bg-[#ffffff] font-md text-sm py-3 pl-6 rounded-md ' />
+                    <input type="text" id="text" placeholder="DD/MM/YY" className=' w-[340px] h-[50px]  outline-none bg-[#ffffff] font-md text-sm py-3 pl-6 rounded-md ' />
                   </div>
                 </div>
 
@@ -230,13 +230,13 @@ const Payment = () => {
 
                   <div className="grid w-full max-w-sm items-center gap-2">
                     <label htmlFor="text" className='font-semibold text-base' >Card Holder</label>
-                    <input type="text" id="text" placeholder="Card holder" className='w-[340px] h-[50px] bg-[#ffffff] font-md text-sm py-3 pl-6 rounded-md ' />
+                    <input type="text" id="text" placeholder="Card holder" className='w-[340px] h-[50px]  outline-none bg-[#ffffff] font-md text-sm py-3 pl-6 rounded-md ' />
 
                   </div>
 
                   <div className="grid w-full max-w-sm items-center gap-2">
                     <label htmlFor="text" className='font-semibold text-base' >CVC</label>
-                    <input type="text" id="text" placeholder="CVC" className=' w-[340px] h-[50px] bg-[#ffffff] font-md text-sm py-3 pl-6 rounded-md ' />
+                    <input type="text" id="text" placeholder="CVC" className=' w-[340px] h-[50px]  outline-none bg-[#ffffff] font-md text-sm py-3 pl-6 rounded-md ' />
                   </div>
                 </div>
               </div>
@@ -391,7 +391,7 @@ const Payment = () => {
 
           <div className="w-[444px] h-[56px] bg-[#F6F7F9] flex justify-between text-center p-5 rounded-lg">
          
-           <input type="text" placeholder='Apply promo code' className='text-[#90A3BF] bg-[#F6F7F9] font-normal text-sm'/>
+           <input type="text" placeholder='Apply promo code' className='text-[#90A3BF] bg-[#F6F7F9] font-normal text-sm outline-none'/>
            <p className='font-semibold  '>Apply Now</p>
           
           </div>
@@ -423,3 +423,6 @@ const Payment = () => {
 }
 
 export default Payment
+
+
+

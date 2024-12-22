@@ -105,7 +105,7 @@ const Detail = () => {
             {/* image */}
             <div className="">
 
-             <SliderDemo/>
+              <SliderDemo />
 
 
             </div>
@@ -181,7 +181,7 @@ const Detail = () => {
 
             {/* detail card */}
 
-            <div className="bg-[#FFFFFF] border-[1px] border-[#F3F5F7] rounded-lg w-[492px] h-[500px] p-7  flex flex-col gap-8">
+            <div className="bg-[#FFFFFF] border-[1px] border-[#F3F5F7] rounded-xl w-[492px] h-[500px] p-7  flex flex-col gap-8">
               <div className="flex justify-between">
                 <div className="w-[220px] h-[72px]  ">
                   <p className='font-bold text-3xl font-jakarta mb-2'>Nissan GT - R</p>
@@ -249,7 +249,7 @@ const Detail = () => {
                   <p className="text-[#90A3BF] font-bold text-sm line-through">$100.00</p>
                 </div>
 
-               <Link href='/payment'> <button className='bg-[#3563E9] text-[#FFFFFF] px-1 py-3 rounded-[4px] w-[116px] h-[44px] text-center'>Rent Now</button></Link>
+                <Link href='/payment'> <button className='bg-[#3563E9] text-[#FFFFFF] px-1 py-3 rounded-[4px] w-[116px] h-[44px] text-center'>Rent Now</button></Link>
 
               </div>
 
@@ -264,117 +264,117 @@ const Detail = () => {
 
           {/* comments div */}
 
-          <div className="w-[1016px] h-[452px] bg-[#FFFFFF] border rounded-lg mx-6 p-6  ">
+          <div className="w-[1016px] h-[452px] bg-[#FFFFFF] border rounded-xl mx-6 p-6  ">
 
             {/* reviews main */}
 
             <div className="flex flex-col gap-5">
 
-            <div className="w-[136px] h-7 flex justify-between">
-              <p className='text-xl font-semibold'>Reviews</p>
-              <div className="bg-[#3563E9] rounded-sm w-11 h-7 text-white text-center ">13</div>
-            </div>
+              <div className="w-[136px] h-7 flex justify-between">
+                <p className='text-xl font-semibold'>Reviews</p>
+                <div className="bg-[#3563E9] rounded-lg w-11 h-7 text-white text-center ">13</div>
+              </div>
 
-            {/* review-1*/}
+              {/* review-1*/}
 
-                   <div className="w-[968px] h-[124px] flex">
-                    {/* img div */}
-                              <div className="">
-                                     <Image
-                                     src={'/img icon.svg'}
-                                     alt='img'
-                                     width={80}
-                                     height={80}
-                                     />
+              <div className="w-[968px] h-[124px] flex">
+                {/* img div */}
+                <div className="">
+                  <Image
+                    src={'/img icon.svg'}
+                    alt='img'
+                    width={80}
+                    height={80}
+                  />
 
-                              </div>
-
-
-                              {/* text */}
-                              <div className="flex flex-col gap-2 ml-4">
-
-                                {/* date */}
-
-                                <div className="flex justify-between">
-                                  <h1 className="font-bold text-xl">Alex Stanton</h1>
-                                  <p className="font-medium text-sm text-[#90A3BF]">21 July 2022</p>
-                                </div>
-
-                                {/* stars */}
-
-                                <div className="flex justify-between">
-                                  <p className="text-[#90A3BF] font-medium text-sm ">CEO at Bukalapak</p>
-                                  <Image
-                                  src={'/review star.svg'}
-                                  alt='star'
-                                  width={108}
-                                  height={20}
-                                  
-                                  />
-
-                                </div>
+                </div>
 
 
-                                            {/* paragraph */}
-                              <div className=""> 
-                                <p className='text-[#596780] font-normal text-sm'>We are very happy with the service from the MORENT App. Morent has a low price and also a large variety of cars with good and comfortable facilities. In addition, the service provided by the officers is also very friendly and very polite.</p>
-                              </div>
-                              </div>
+                {/* text */}
+                <div className="flex flex-col gap-2 ml-4">
 
-                             
+                  {/* date */}
 
-                   </div>
+                  <div className="flex justify-between">
+                    <h1 className="font-bold text-xl">Alex Stanton</h1>
+                    <p className="font-medium text-sm text-[#90A3BF]">21 July 2022</p>
+                  </div>
 
+                  {/* stars */}
 
-                   {/* review-2 */}
+                  <div className="flex justify-between">
+                    <p className="text-[#90A3BF] font-medium text-sm ">CEO at Bukalapak</p>
+                    <Image
+                      src={'/review star.svg'}
+                      alt='star'
+                      width={108}
+                      height={20}
 
-                   <div className="w-[968px] h-[124px] flex mb-7">
-                    {/* img div */}
-                              <div className="">
-                                     <Image
-                                     src={'/review girl.svg'}
-                                     alt='img'
-                                     width={80}
-                                     height={80}
-                                     />
+                    />
 
-                              </div>
-
-
-                              {/* text */}
-                              <div className="flex flex-col gap-2 ml-4">
-
-                                {/* date */}
-
-                                <div className="flex justify-between">
-                                  <h1 className="font-bold text-xl">Skylar Dias</h1>
-                                  <p className="font-medium text-sm text-[#90A3BF]">20 July 2022</p>
-                                </div>
-
-                                {/* stars */}
-
-                                <div className="flex justify-between">
-                                  <p className="text-[#90A3BF] font-medium text-sm ">CEO at Amazon</p>
-                                  <Image
-                                  src={'/review star.svg'}
-                                  alt='star'
-                                  width={108}
-                                  height={20}
-                                  
-                                  />
-
-                                </div>
+                  </div>
 
 
-                                            {/* paragraph */}
-                              <div className=""> 
-                                <p className='text-[#596780] font-normal text-sm'>We are greatly helped by the services of the MORENT Application. Morent has low prices and also a wide variety of cars with good and comfortable facilities. In addition, the service provided by the officers is also very friendly and very polite.</p>
-                              </div>
-                              </div>
+                  {/* paragraph */}
+                  <div className="">
+                    <p className='text-[#596780] font-normal text-sm'>We are very happy with the service from the MORENT App. Morent has a low price and also a large variety of cars with good and comfortable facilities. In addition, the service provided by the officers is also very friendly and very polite.</p>
+                  </div>
+                </div>
 
-                             
 
-                   </div>
+
+              </div>
+
+
+              {/* review-2 */}
+
+              <div className="w-[968px] h-[124px] flex mb-7">
+                {/* img div */}
+                <div className="">
+                  <Image
+                    src={'/review girl.svg'}
+                    alt='img'
+                    width={80}
+                    height={80}
+                  />
+
+                </div>
+
+
+                {/* text */}
+                <div className="flex flex-col gap-2 ml-4">
+
+                  {/* date */}
+
+                  <div className="flex justify-between">
+                    <h1 className="font-bold text-xl">Skylar Dias</h1>
+                    <p className="font-medium text-sm text-[#90A3BF]">20 July 2022</p>
+                  </div>
+
+                  {/* stars */}
+
+                  <div className="flex justify-between">
+                    <p className="text-[#90A3BF] font-medium text-sm ">CEO at Amazon</p>
+                    <Image
+                      src={'/review star.svg'}
+                      alt='star'
+                      width={108}
+                      height={20}
+
+                    />
+
+                  </div>
+
+
+                  {/* paragraph */}
+                  <div className="">
+                    <p className='text-[#596780] font-normal text-sm'>We are greatly helped by the services of the MORENT Application. Morent has low prices and also a wide variety of cars with good and comfortable facilities. In addition, the service provided by the officers is also very friendly and very polite.</p>
+                  </div>
+                </div>
+
+
+
+              </div>
 
 
 
@@ -382,18 +382,15 @@ const Detail = () => {
             </div>
 
             {/* show all */}
-                <div className="flex justify-center ">
-            <div className="flex w-[132px] h-11  text-center p-2">
-              <div className='text-[#90A3BF] text-base font-semibold flex justify-between w-[100px] '>Show All
-                           <div className='flex '>
-                                <Image
-                                  src='/arrow-down.svg'
-                                  alt='arrow'
-                                  width={14}
-                                  height={14}
-                                   /></div></div>
-                       </div>
-                       </div>
+            <div className="flex justify-center ">
+              <div className="flex w-[132px] h-11  text-center p-2">
+
+                <select  className='text-[#90A3BF] text-base font-semibold outline-none'>
+                  <option>Show All</option>
+                </select>
+
+              </div>
+            </div>
 
           </div>
 
@@ -403,100 +400,100 @@ const Detail = () => {
 
           <div className='mx-6 my-6 h-[452px]'>
 
-          <div className="mb-5  flex justify-between"><p className='text-[#90A3BF] pl-5'>Recent Car</p> 
-          <p className='text-[#3563E9] text-base text-center pr-5 font-semibold'>View All</p>
-          </div>
- <div className="flex justify-between">
-         <Card
-         name='Koenigsegg'
-         heart='/heart-fill.svg'
-         type='Sport'
-         car='/car img-1.svg'
-         liter='90L'
-         people='2'
-         price='99.00/'
-       />
+            <div className="mb-5  flex justify-between"><p className='text-[#90A3BF] pl-5'>Recent Car</p>
+              <p className='text-[#3563E9] text-base text-center pr-5 font-semibold'>View All</p>
+            </div>
+            <div className="flex justify-between">
+              <Card
+                name='Koenigsegg'
+                heart='/heart-fill.svg'
+                type='Sport'
+                car='/car img-1.svg'
+                liter='90L'
+                people='2'
+                price='99.00/'
+              />
 
- <Card
-         name='Nissan GT - R'
-         heart='/non-fill heart.svg'
-         type='Sport'
-         car='/car img-2.svg'
-         liter='80L'
-         people='2'
-         price='80.00/'
-         discount='$100.00'
-         />
+              <Card
+                name='Nissan GT - R'
+                heart='/non-fill heart.svg'
+                type='Sport'
+                car='/car img-2.svg'
+                liter='80L'
+                people='2'
+                price='80.00/'
+                discount='$100.00'
+              />
 
-<Card
-         name='Rolls - Royce'
-         heart='/heart-fill.svg'
-         type='Sedan'
-         car='/rolls.svg'
-         liter='70L'
-         people='4'
-         price='96.00/'
-         />
-
-
-        </div>
+              <Card
+                name='Rolls - Royce'
+                heart='/heart-fill.svg'
+                type='Sedan'
+                car='/rolls.svg'
+                liter='70L'
+                people='4'
+                price='96.00/'
+              />
 
 
+            </div>
 
 
-        </div>
 
 
-        {/* car div 2 */}
-
-        <div className='h-[452px] mx-6'>
-          <div className="mb-5  flex justify-between"><p className='text-[#90A3BF] pl-5'>Recomendation Car</p> 
-          
           </div>
 
-          {/* div-2 */}
 
- <div className="flex justify-between">
-         <Card
-         name='All New Rush'
-         heart='/non-fill heart.svg'
-         type='SUV'
-         car='/rush.svg'
-         liter='70L'
-         people='6'
-         price='72.00/'
-         discount='$80.00'
-       />
+          {/* car div 2 */}
 
-<Card
-         name='CR - V'
-         heart='/heart-fill.svg'
-         type='SUV'
-         car='/cr.svg'
-         liter='80L'
-         people='6'
-         price='80.00/'
-        
-        />
+          <div className='h-[452px] mx-6'>
+            <div className="mb-5  flex justify-between"><p className='text-[#90A3BF] pl-5'>Recomendation Car</p>
 
-<Card
-         name='All New Terios'
-         heart='/non-fill heart.svg'
-         type='SUV'
-         car='/terios.svg'
-         liter='90L'
-         people='6'
-         price='74.00/'
-        />
+            </div>
 
+            {/* div-2 */}
+
+            <div className="flex justify-between">
+              <Card
+                name='All New Rush'
+                heart='/non-fill heart.svg'
+                type='SUV'
+                car='/rush.svg'
+                liter='70L'
+                people='6'
+                price='72.00/'
+                discount='$80.00'
+              />
+
+              <Card
+                name='CR - V'
+                heart='/heart-fill.svg'
+                type='SUV'
+                car='/cr.svg'
+                liter='80L'
+                people='6'
+                price='80.00/'
+
+              />
+
+              <Card
+                name='All New Terios'
+                heart='/non-fill heart.svg'
+                type='SUV'
+                car='/terios.svg'
+                liter='90L'
+                people='6'
+                price='74.00/'
+              />
+
+            </div>
+
+
+
+
+          </div>
+        </div>
       </div>
-
-
-
-
-    </div>
-    </div>
-    </div>
     </div>
 
 
