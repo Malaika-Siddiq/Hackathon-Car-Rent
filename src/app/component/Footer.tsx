@@ -12,7 +12,7 @@ const Footer = () => {
           {/* Left Section */}
           <div className="w-full md:w-1/3 lg:w-[292px] mb-6 md:mb-0">
             <div className="flex flex-col items-start gap-4">
-              <Image src="/logo.svg" alt="logo" width={148} height={44} />
+              <Image src="/Logo.svg" alt="logo" width={148} height={44} />
               <p className="text-[#13131399] font-jakarta">
                 Our vision is to provide convenience and help increase your sales business.
               </p>

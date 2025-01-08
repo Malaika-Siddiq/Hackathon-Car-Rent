@@ -222,7 +222,7 @@ const Category = () => {
 
           <div className="flex justify-center items-center absolute top-56 left-[850px] transform -translate-x-1/2 -translate-y-1/2  ">
             <Image
-              src='/switch.svg'
+              src='/Switch.svg'
               alt='switch'
               width={150}
               height={150}

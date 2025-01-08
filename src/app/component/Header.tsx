@@ -9,7 +9,7 @@ const Header = () => {
       <header className="w-full bg-[#ffffff] border-[1px] border-[#c3d4e9] flex flex-wrap justify-between items-center px-4 py-4 md:py-6 lg:py-8 lg:px-12">
         {/* Logo */}
         <div className="flex items-center justify-center mb-4 md:mb-0">
-          <Image src="/logo.svg" alt="logo" width={148} height={44} />
+          <Image src="/Logo.svg" alt="logo" width={148} height={44} />
         </div>
 
         {/* Search Input */}

@@ -203,7 +203,7 @@ const Payment = () => {
                   <p className='font-jakarta font-medium'>Credit Card</p>
                 </div>
                 <Image
-                  src='/visa.svg'
+                  src='/Visa.svg'
                   alt='visa'
                   width={92}
                   height={20}
@@ -250,7 +250,7 @@ const Payment = () => {
               <div className="flex justify-center py-3 ">  <input type="radio" className='mr-3' />Paypal</div>
 
               <Image
-                src='/paypal.svg'
+                src='/PayPal.svg'
                 alt='paypal'
                 width={100}
                 height={24}
@@ -261,8 +261,8 @@ const Payment = () => {
               <div className="flex justify-center py-3 ">  <input type="radio" className='mr-3' />Bitcoin</div>
 
               <Image
-                src='/bitcoin.svg'
-                alt='paypal'
+                src='/Bitcoin.svg'
+                alt='bitcoin'
                 width={100}
                 height={24}
               />
@@ -358,7 +358,7 @@ const Payment = () => {
 
               <div className="flex ">
                 <Image
-                  src={'/review star.svg'}
+                  src={'/Review Star.svg'}
                   alt='review'
                   width={108}
                   height={20}

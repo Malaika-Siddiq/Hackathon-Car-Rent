@@ -356,7 +356,7 @@ const Detail = () => {
                   <div className="flex justify-between">
                     <p className="text-[#90A3BF] font-medium text-sm ">CEO at Amazon</p>
                     <Image
-                      src={'/review star.svg'}
+                      src={'/Review Star.svg'}
                       alt='star'
                       width={108}
                       height={20}

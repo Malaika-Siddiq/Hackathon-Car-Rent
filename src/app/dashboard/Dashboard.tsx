@@ -158,7 +158,7 @@ const Dashboard = () => {
           <p className="font-semibold text-lg">Details Rental</p>
 
           <Image
-            src={'/maps.svg'}
+            src={'/Maps.svg'}
             alt='map'
             width={486}
             height={272}
@@ -406,7 +406,7 @@ const Dashboard = () => {
         <div className="flex flex-col gap-10 mt-7 mr-4">
           <div className="">
             <Image
-              src={'/top 5 car rental.svg'}
+              src={'/Top 5 Car Rental.svg'}
               alt='top 5 car'
               width={500}
               height={324}
