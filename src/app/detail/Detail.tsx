@@ -1,409 +1,209 @@
+
+
 import React from 'react'
 import Image from 'next/image'
-
 import Card from '../component/Card'
 import SliderDemo from '../component/Slider'
 import Link from 'next/link'
 
 const Detail = () => {
   return (
-    <div className=''>
-
-
-      <div className='flex  bg-[#F6F7F9] '>
-
-
-
-        <div className="w-[330px] h-[2016px] bg-[#FFFFFF] border-[#F3F5F7] border-[1px] flex-col space-y-4">
-
-          {/* type */}
-          <div className="flex-col justify-evenly w-[176px] h-[304px] ml-5 mt-5 space-y-5">
-            <div className='ml-4'><p className='text-[#90A3BF] font-semibold text-xs'>TYPE</p></div>
-
-            <div className='flex-col space-y-4'>
-
-              <label className="flex items-center space-x-3">
-                <input type="checkbox" className="hidden peer" />
-                <div className="w-5 h-5 border-2 border-gray-300 rounded-md peer-checked:bg-blue-600 peer-checked:border-blue-600"></div>
-                <span className="text-gray-700 font-semibold text-base">Sport</span><p className='text-[#90A3BF] font-semibold'>(10)</p>
-              </label>
-
-              <label className="flex items-center space-x-3">
-                <input type="checkbox" className="hidden peer" />
-                <div className="w-5 h-5 border-2 border-gray-300 rounded-md peer-checked:bg-blue-600 peer-checked:border-blue-600"></div>
-                <span className="text-gray-700 font-semibold text-base">SUV</span><p className='text-[#90A3BF] font-semibold'>(12)</p>
-              </label>
-
-              <label className="flex items-center space-x-3">
-                <input type="checkbox" className="hidden peer" />
-                <div className="w-5 h-5 border-2 border-gray-300 rounded-md peer-checked:bg-blue-600 peer-checked:border-blue-600"></div>
-                <span className="text-gray-700 font-semibold text-base">Sedan</span><p className='text-[#90A3BF] font-semibold'>(16)</p>
-              </label>
-
-              <label className="flex items-center space-x-3">
-                <input type="checkbox" className="hidden peer" />
-                <div className="w-5 h-5 border-2 border-gray-300 rounded-md peer-checked:bg-blue-600 peer-checked:border-blue-600"></div>
-                <span className="text-gray-700 font-semibold text-base">MPV</span><p className='text-[#90A3BF] font-semibold'>(20)</p>
-              </label>
-
-              <label className="flex items-center space-x-3">
-                <input type="checkbox" className="hidden peer" />
-                <div className="w-5 h-5 border-2 border-gray-300 rounded-md peer-checked:bg-blue-600 peer-checked:border-blue-600"></div>
-                <span className="text-gray-700 font-semibold text-base">Coupe</span><p className='text-[#90A3BF] font-semibold'>(14)</p>
-              </label>
-
-              <label className="flex items-center space-x-3">
-                <input type="checkbox" className="hidden peer" />
-                <div className="w-5 h-5 border-2 border-gray-300 rounded-md peer-checked:bg-blue-600 peer-checked:border-blue-600"></div>
-                <span className="text-gray-700 font-semibold text-base">Hatchback</span><p className='text-[#90A3BF] font-semibold'>(14)</p>
-              </label>
-
+    <div className='min-h-screen bg-[#F6F7F9]'>
+      <div className='flex flex-col lg:flex-row'>
+        {/* Sidebar Filter */}
+        <div className="w-full lg:w-[300px] bg-[#FFFFFF] border-[#F3F5F7] border-[1px] p-4">
+          {/* Type Section */}
+          <div className="mb-8">
+            <p className='text-[#90A3BF] font-semibold text-xs mb-4'>TYPE</p>
+            <div className='space-y-4'>
+              {[
+                { label: 'Sport', count: 10 },
+                { label: 'SUV', count: 12 },
+                { label: 'Sedan', count: 16 },
+                { label: 'MPV', count: 20 },
+                { label: 'Coupe', count: 14 },
+                { label: 'Hatchback', count: 14 }
+              ].map((item) => (
+                <label key={item.label} className="flex items-center space-x-3 cursor-pointer">
+                  <input type="checkbox" className="hidden peer" />
+                  <div className="w-5 h-5 border-2 border-gray-300 rounded-md peer-checked:bg-blue-600 peer-checked:border-blue-600"></div>
+                  <span className="text-gray-700 font-semibold text-base">{item.label}</span>
+                  <p className='text-[#90A3BF] font-semibold'>({item.count})</p>
+                </label>
+              ))}
             </div>
-
-
           </div>
 
-          {/* capacity */}
-
-          <div className="flex-col justify-evenly w-[176px] h-[230px] ml-5 mt-5 space-y-5">
-            <div className='ml-4'><p className='text-[#90A3BF] font-semibold text-xs'>CAPACITIES</p></div>
-
-            <div className='flex-col space-y-4'>
-
-              <label className="flex items-center space-x-3">
-                <input type="checkbox" className="hidden peer" />
-                <div className="w-5 h-5 border-2 border-gray-300 rounded-md peer-checked:bg-blue-600 peer-checked:border-blue-600"></div>
-                <span className="text-gray-700 font-semibold text-base">2 Person</span><p className='text-[#90A3BF] font-semibold'>(10)</p>
-              </label>
-
-              <label className="flex items-center space-x-3">
-                <input type="checkbox" className="hidden peer" />
-                <div className="w-5 h-5 border-2 border-gray-300 rounded-md peer-checked:bg-blue-600 peer-checked:border-blue-600"></div>
-                <span className="text-gray-700 font-semibold text-base">4 Person</span><p className='text-[#90A3BF] font-semibold'>(14)</p>
-              </label>
-
-              <label className="flex items-center space-x-3">
-                <input type="checkbox" className="hidden peer" />
-                <div className="w-5 h-5 border-2 border-gray-300 rounded-md peer-checked:bg-blue-600 peer-checked:border-blue-600"></div>
-                <span className="text-gray-700 font-semibold text-base">6 Person</span><p className='text-[#90A3BF] font-semibold'>(12)</p>
-              </label>
-
-              <label className="flex items-center space-x-3">
-                <input type="checkbox" className="hidden peer" />
-                <div className="w-5 h-5 border-2 border-gray-300 rounded-md peer-checked:bg-blue-600 peer-checked:border-blue-600"></div>
-                <span className="text-gray-700 font-semibold text-base">8 or More</span><p className='text-[#90A3BF] font-semibold'>(16)</p>
-              </label>
-
+          {/* Capacity Section */}
+          <div className="mb-8">
+            <p className='text-[#90A3BF] font-semibold text-xs mb-4'>CAPACITIES</p>
+            <div className='space-y-4'>
+              {[
+                { label: '2 Person', count: 10 },
+                { label: '4 Person', count: 14 },
+                { label: '6 Person', count: 12 },
+                { label: '8 or More', count: 16 }
+              ].map((item) => (
+                <label key={item.label} className="flex items-center space-x-3 cursor-pointer">
+                  <input type="checkbox" className="hidden peer" />
+                  <div className="w-5 h-5 border-2 border-gray-300 rounded-md peer-checked:bg-blue-600 peer-checked:border-blue-600"></div>
+                  <span className="text-gray-700 font-semibold text-base">{item.label}</span>
+                  <p className='text-[#90A3BF] font-semibold'>({item.count})</p>
+                </label>
+              ))}
             </div>
-
           </div>
 
-          {/* price */}
-
-          <div className="ml-5 space-y-5">
-            <div className=""><p className='text-[#90A3BF] font-semibold text-xs'>PRICE</p></div>
-            {/* image */}
-            <div className="">
-
+          {/* Price Section */}
+          <div className="space-y-4">
+            <p className='text-[#90A3BF] font-semibold text-xs'>PRICE</p>
+            <div className="w-full">
               <SliderDemo />
-
-
             </div>
-
-            {/* max */}
-
-            <div className=""><p className='text-[#596780] font-semibold text-xl'>Max. $100.00</p></div>
-
-
+            <p className='text-[#596780] font-semibold text-xl'>Max. $100.00</p>
           </div>
-
-
         </div>
 
-        {/* detail div */}
-
-        <div className="">
-          <div className="my-9 mx-6 flex justify-between w-[1020px] h-auto">
-
-            {/* image div */}
-
-            <div className="w-[492px] h-[508px] ">
-
-              {/* img 1 div */}
-
-              <div className="mb-4">
+        {/* Main Content */}
+        <div className="flex-1 p-4">
+          {/* Car Details Section */}
+          <div className="flex flex-col lg:flex-row gap-6 mb-8">
+            {/* Car Images */}
+            <div className="w-full lg:w-1/2 space-y-4">
+              <div className="relative w-full h-[360px]">
                 <Image
-                  src={'/car-text.svg'}
-                  alt='car'
-                  width={492}
-                  height={360}
+                  src="/car-text.svg"
+                  alt="car"
+                  fill
+                  className="object-contain"
                 />
               </div>
-
-              {/* small img */}
-
-              <div className="flex justify-between">
-
-                <div>
-                  <Image
-                    src={'/sm car-1.svg'}
-                    alt='car'
-                    width={148}
-                    height={124}
-
-                  />
-                </div>
-
-                <div>
-                  <Image
-                    src={'/sm car-2.svg'}
-                    alt='car'
-                    width={148}
-                    height={124}
-
-                  />
-                </div>
-                <div>
-                  <Image
-                    src={'/sm car-3.svg'}
-                    alt='car'
-                    width={148}
-                    height={124}
-
-                  />
-                </div>
-
-
+              <div className="grid grid-cols-3 gap-4">
+                {['/sm car-1.svg', '/sm car-2.svg', '/sm car-3.svg'].map((src, index) => (
+                  <div key={index} className="relative h-[124px]">
+                    <Image
+                      src={src}
+                      alt={`car view ${index + 1}`}
+                      fill
+                      className="object-contain"
+                    />
+                  </div>
+                ))}
               </div>
-
-
             </div>
 
-            {/* detail card */}
-
-            <div className="bg-[#FFFFFF] border-[1px] border-[#F3F5F7] rounded-xl w-[492px] h-[500px] p-7  flex flex-col gap-8">
-              <div className="flex justify-between">
-                <div className="w-[220px] h-[72px]  ">
-                  <p className='font-bold text-3xl font-jakarta mb-2'>Nissan GT - R</p>
-
-                  <div className="flex ">
-                    <Image
-                      src={'/review star.svg'}
-                      alt='review'
-                      width={108}
-                      height={20}
-
-                    />
-                    <p className='text-[#596780] text-sm ml-1'>440+ Reviewer</p>
-
+            {/* Car Details Card */}
+            <div className="w-full lg:w-1/2 bg-white border border-[#F3F5F7] rounded-xl p-6 space-y-12">
+              <div className="flex justify-between items-start">
+                <div>
+                  <h2 className="text-2xl md:text-3xl font-bold mb-2">Nissan GT - R</h2>
+                  <div className="flex items-center gap-2">
+                    <Image src="/review star.svg" alt="review" width={108} height={20} />
+                    <p className="text-[#596780] text-sm">440+ Reviewer</p>
                   </div>
-
-
                 </div>
-
-
-                {/* heart icon */}
-
-                <div className="">
-                  <Image
-                    src={'/heart-fill.svg'}
-                    alt='heart'
-                    width={24}
-                    height={24}
-                  />
-
-
-                </div>
+                <button>
+                  <Image src="/heart-fill.svg" alt="favorite" width={24} height={24} />
+                </button>
               </div>
 
+              <p className="text-[#596780] text-base md:text-xl">
+                NISMO has become the embodiment of Nissan's outstanding performance, inspired by the most unforgiving proving ground, the race track.
+              </p>
 
-              {/* text */}
-
-              <div className="w-[444px] h-[100px]">
-                <p className="text-[#596780] text-xl font-normal">NISMO has become the embodiment of Nissans outstanding performance, inspired by the most unforgiving proving ground, the race track.</p>
-              </div>
-
-              {/* type div */}
-
-              <div className="w-[430px] h-[72px] space-y-3 ">
+              {/* Specifications */}
+              <div className="grid grid-cols-2 gap-5 justify-between">
                 <div className="flex justify-between">
-                  <p className="text-[#90A3BF] text-xl font-normal">Type Car</p>
-                  <p className="text-[#596780] text-xl font-semibold">Sport</p>
-                  <p className="text-[#90A3BF] text-xl font-normal">Capacity</p>
-                  <p className="text-[#596780] text-xl font-semibold">2 Person</p>
+                  <span className="text-[#90A3BF]">Type Car</span>
+                  <span className="text-[#596780] font-semibold">Sport</span>
                 </div>
-                <div className="flex justify-between ">
-                  <p className="text-[#90A3BF] text-xl font-normal">Steering</p>
-                  <p className="text-[#596780] text-xl font-semibold">Manual</p>
-                  <p className="text-[#90A3BF] text-xl font-normal">Gasoline</p>
-                  <p className="text-[#596780] text-xl font-semibold">70L</p>
+                <div className="flex justify-between">
+                  <span className="text-[#90A3BF]">Capacity</span>
+                  <span className="text-[#596780] font-semibold">2 Person</span>
+                </div>
+                <div className="flex justify-between">
+                  <span className="text-[#90A3BF]">Steering</span>
+                  <span className="text-[#596780] font-semibold">Manual</span>
+                </div>
+                <div className="flex justify-between">
+                  <span className="text-[#90A3BF]">Gasoline</span>
+                  <span className="text-[#596780] font-semibold">70L</span>
                 </div>
               </div>
 
-
-              {/* price */}
-
-              <div className="flex justify-between mt-12 ">
-                <div className="flex-col  ">
-                  <p className="text-[#1A202C] font-jakarta font-bold text-3xl ">$80.00/<span className='text-xs text-[#90A3BF] '>day</span></p>
-                  <p className="text-[#90A3BF] font-bold text-sm line-through">$100.00</p>
+              {/* Price and Rent Button */}
+              <div className="flex justify-between items-center pt-4">
+                <div>
+                  <p className="text-2xl md:text-3xl font-bold">
+                    $80.00/<span className="text-xs text-[#90A3BF]">day</span>
+                  </p>
+                  <p className="text-[#90A3BF] text-sm line-through">$100.00</p>
                 </div>
-
-                <Link href='/payment'> <button className='bg-[#3563E9] text-[#FFFFFF] px-1 py-3 rounded-[4px] w-[116px] h-[44px] text-center'>Rent Now</button></Link>
-
+                <Link href="/payment">
+                  <button className="bg-[#3563E9] text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors">
+                    Rent Now
+                  </button>
+                </Link>
               </div>
-
             </div>
-
-
-
           </div>
 
-
-
-
-          {/* comments div */}
-
-          <div className="w-[1016px] h-[452px] bg-[#FFFFFF] border rounded-xl mx-6 p-6  ">
-
-            {/* reviews main */}
-
-            <div className="flex flex-col gap-5">
-
-              <div className="w-[136px] h-7 flex justify-between">
-                <p className='text-xl font-semibold'>Reviews</p>
-                <div className="bg-[#3563E9] rounded-lg w-11 h-7 text-white text-center ">13</div>
-              </div>
-
-              {/* review-1*/}
-
-              <div className="w-[968px] h-[124px] flex">
-                {/* img div */}
-                <div className="">
-                  <Image
-                    src={'/img icon.svg'}
-                    alt='img'
-                    width={80}
-                    height={80}
-                  />
-
-                </div>
-
-
-                {/* text */}
-                <div className="flex flex-col gap-2 ml-4">
-
-                  {/* date */}
-
-                  <div className="flex justify-between">
-                    <h1 className="font-bold text-xl">Alex Stanton</h1>
-                    <p className="font-medium text-sm text-[#90A3BF]">21 July 2022</p>
-                  </div>
-
-                  {/* stars */}
-
-                  <div className="flex justify-between">
-                    <p className="text-[#90A3BF] font-medium text-sm ">CEO at Bukalapak</p>
-                    <Image
-                      src={'/review star.svg'}
-                      alt='star'
-                      width={108}
-                      height={20}
-
-                    />
-
-                  </div>
-
-
-                  {/* paragraph */}
-                  <div className="">
-                    <p className='text-[#596780] font-normal text-sm'>We are very happy with the service from the MORENT App. Morent has a low price and also a large variety of cars with good and comfortable facilities. In addition, the service provided by the officers is also very friendly and very polite.</p>
-                  </div>
-                </div>
-
-
-
-              </div>
-
-
-              {/* review-2 */}
-
-              <div className="w-[968px] h-[124px] flex mb-7">
-                {/* img div */}
-                <div className="">
-                  <Image
-                    src={'/review girl.svg'}
-                    alt='img'
-                    width={80}
-                    height={80}
-                  />
-
-                </div>
-
-
-                {/* text */}
-                <div className="flex flex-col gap-2 ml-4">
-
-                  {/* date */}
-
-                  <div className="flex justify-between">
-                    <h1 className="font-bold text-xl">Skylar Dias</h1>
-                    <p className="font-medium text-sm text-[#90A3BF]">20 July 2022</p>
-                  </div>
-
-                  {/* stars */}
-
-                  <div className="flex justify-between">
-                    <p className="text-[#90A3BF] font-medium text-sm ">CEO at Amazon</p>
-                    <Image
-                      src={'/Review Star.svg'}
-                      alt='star'
-                      width={108}
-                      height={20}
-
-                    />
-
-                  </div>
-
-
-                  {/* paragraph */}
-                  <div className="">
-                    <p className='text-[#596780] font-normal text-sm'>We are greatly helped by the services of the MORENT Application. Morent has low prices and also a wide variety of cars with good and comfortable facilities. In addition, the service provided by the officers is also very friendly and very polite.</p>
-                  </div>
-                </div>
-
-
-
-              </div>
-
-
-
-
+          {/* Reviews Section */}
+          <div className="bg-white rounded-xl p-6 mb-8">
+            <div className="flex items-center gap-2 mb-6">
+              <h3 className="text-xl font-semibold">Reviews</h3>
+              <span className="bg-[#3563E9] text-white px-3 py-1 rounded-lg">13</span>
             </div>
 
-            {/* show all */}
-            <div className="flex justify-center ">
-              <div className="flex w-[132px] h-11  text-center p-2">
-
-                <select  className='text-[#90A3BF] text-base font-semibold outline-none'>
-                  <option>Show All</option>
-                </select>
-
-              </div>
+            <div className="space-y-6">
+              {/* Review Items */}
+              {[
+                {
+                  name: 'Alex Stanton',
+                  role: 'CEO at Bukalapak',
+                  date: '21 July 2022',
+                  image: '/img icon.svg'
+                },
+                {
+                  name: 'Skylar Dias',
+                  role: 'CEO at Amazon',
+                  date: '20 July 2022',
+                  image: '/review girl.svg'
+                }
+              ].map((review, index) => (
+                <div key={index} className="flex gap-4">
+                  <Image src={review.image} alt={review.name} width={80} height={80} />
+                  <div className="flex-1">
+                    <div className="flex justify-between mb-2">
+                      <h4 className="font-bold">{review.name}</h4>
+                      <p className="text-[#90A3BF] text-sm">{review.date}</p>
+                    </div>
+                    <div className="flex justify-between mb-2">
+                      <p className="text-[#90A3BF] text-sm">{review.role}</p>
+                      <Image src="/review star.svg" alt="rating" width={108} height={20} />
+                    </div>
+                    <p className="text-[#596780] text-sm">
+                      We are very happy with the service from the MORENT App. Morent has a low price and also a large variety of cars with good and comfortable facilities.
+                    </p>
+                  </div>
+                </div>
+              ))}
             </div>
 
+            <div className="flex justify-center mt-6">
+              <select className="text-[#90A3BF] text-base font-semibold outline-none cursor-pointer">
+                <option>Show All</option>
+              </select>
+            </div>
           </div>
 
-
-
-          {/* cars div 1 */}
-
-          <div className='mx-6 my-6 h-[452px]'>
-
-            <div className="mb-5  flex justify-between"><p className='text-[#90A3BF] pl-5'>Recent Car</p>
-              <p className='text-[#3563E9] text-base text-center pr-5 font-semibold'>View All</p>
+          {/* Recent Cars Section */}
+          <div className="mb-8">
+            <div className="flex justify-between items-center mb-6">
+              <h3 className="text-[#90A3BF]">Recent Car</h3>
+              <button className="text-[#3563E9] font-semibold">View All</button>
             </div>
-            <div className="flex justify-between">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               <Card
                 name='Koenigsegg'
                 heart='/heart-fill.svg'
@@ -413,7 +213,6 @@ const Detail = () => {
                 people='2'
                 price='99.00/'
               />
-
               <Card
                 name='Nissan GT - R'
                 heart='/non-fill heart.svg'
@@ -424,7 +223,6 @@ const Detail = () => {
                 price='80.00/'
                 discount='$100.00'
               />
-
               <Card
                 name='Rolls - Royce'
                 heart='/heart-fill.svg'
@@ -434,26 +232,15 @@ const Detail = () => {
                 people='4'
                 price='96.00/'
               />
-
-
             </div>
-
-
-
-
           </div>
 
-
-          {/* car div 2 */}
-
-          <div className='h-[452px] mx-6'>
-            <div className="mb-5  flex justify-between"><p className='text-[#90A3BF] pl-5'>Recomendation Car</p>
-
+          {/* Recommended Cars Section */}
+          <div>
+            <div className="flex justify-between items-center mb-6">
+              <h3 className="text-[#90A3BF]">Recommended Car</h3>
             </div>
-
-            {/* div-2 */}
-
-            <div className="flex justify-between">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               <Card
                 name='All New Rush'
                 heart='/non-fill heart.svg'
@@ -464,7 +251,6 @@ const Detail = () => {
                 price='72.00/'
                 discount='$80.00'
               />
-
               <Card
                 name='CR - V'
                 heart='/heart-fill.svg'
@@ -473,9 +259,7 @@ const Detail = () => {
                 liter='80L'
                 people='6'
                 price='80.00/'
-
               />
-
               <Card
                 name='All New Terios'
                 heart='/non-fill heart.svg'
@@ -485,19 +269,13 @@ const Detail = () => {
                 people='6'
                 price='74.00/'
               />
-
             </div>
-
-
-
-
           </div>
         </div>
       </div>
     </div>
-
-
   )
 }
 
 export default Detail
+
